@@ -1,0 +1,23 @@
+:root {
+  --clr-primary-900: hsl(243, 87%, 12%);
+  --clr-primary-900-a: hsla(243, 87%, 12%, .32);
+  --clr-primary-700: hsl(238, 22%, 44%);
+  --clr-accent-400: hsl(224, 93%, 58%);
+  --clr-accent-cyan: hsl(170, 45%, 43%);
+  --clr-neutral-200: hsl(240, 75%, 98%);
+  --clr-neutral-gray: hsl(0, 0%, 75%);
+
+  --ff-primary: 'Open Sans';
+  --ff-secondary: 'Raleway';
+
+  --fs-100: .625rem;
+  --fs-200: .875rem;
+  --fs-300: .9375rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 2.25rem;
+
+  --fw-400: 400;
+  --fw-700: 700;
+}

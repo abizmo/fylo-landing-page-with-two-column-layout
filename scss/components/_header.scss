@@ -1,0 +1,21 @@
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 2.25rem;
+  margin: 2rem;
+
+  & img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.navbar {
+  display: flex;
+  font-family: var(--ff-secondary), sans-serif;
+  font-size: fs-400;
+  gap: 2rem;
+  letter-spacing: -0.01em;
+  line-height: normal;
+}
