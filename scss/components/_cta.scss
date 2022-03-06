@@ -1,0 +1,31 @@
+#cta {
+  background-color: var(--clr-primary-700);
+  padding-bottom: 6.25rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 5rem;
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.25rem;
+    max-width: 21.75rem;
+
+    & input {
+      border-radius: .25rem;
+      box-shadow: 0 0 .25rem var(--clr-primary-900-a);
+      padding: 1rem .75rem;
+    }
+
+    & button {
+      background-color: var(--clr-accent-400);
+      border: none;
+      border-radius: .25rem;
+      box-shadow: 0 0 .25rem var(--clr-primary-900-a);
+      padding: 1rem;
+    }
+  }
+}
