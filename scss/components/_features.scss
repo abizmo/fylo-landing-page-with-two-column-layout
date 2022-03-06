@@ -1,0 +1,82 @@
+#features {
+  background-color: var(--clr-neutral-200);
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  position: relative;
+
+  &::before {
+    background-image: url('../../images/bg-curve-mobile.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: ' ';
+    height: 53px;
+    position: absolute;
+    top: -53px;
+    left: 0;
+    right: 0;
+  }
+
+  &>* {
+    margin-bottom: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+
+  & a {
+    border-bottom: .125rem solid var(--clr-accent-cyan);
+    color: var(--clr-accent-cyan);
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    margin-bottom: 3.75rem;
+    padding-bottom: .75rem;
+    text-decoration: none;
+    width: max-content;
+
+    & img {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+
+  & blockquote {
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 0 0 .25rem var(--clr-primary-900-a);
+    padding: 2rem 1.5rem 2rem 2.25rem;
+
+    & > img {
+      margin-bottom: 1rem;;
+    }
+  }
+}
+
+.author {
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+
+  & img {
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-100);
+  font-weight: var(--fw-400);
+  gap: .125rem;
+  letter-spacing: -0.03em;
+  line-height: normal;
+  margin: 0;
+
+  & b {
+    font-size: var(--fs-200);
+  }
+}
