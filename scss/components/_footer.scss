@@ -1,0 +1,46 @@
+footer {
+  background-color: var(--clr-primary-900);
+  padding-bottom: 4rem;
+  padding-left: 3.75rem;
+  padding-top: 6rem;
+  position: relative;
+
+  & img {
+    filter: brightness(0) invert(1);
+    margin-bottom: 3.75rem;
+  }
+  
+  & p {
+    margin: 0;
+  }
+
+  & a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  & .links {
+    @extend .link;
+    font-size: 1.375rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 5rem;
+
+    & li {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  & .attribution {
+    font-size: 11px;
+    position: absolute;
+    text-align: center;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+  }
+
+  & .attribution a {
+    color: var(--clr-accent-cyan);
+  }
+}
