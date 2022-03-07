@@ -27,6 +27,11 @@ footer {
 
     & li {
       margin-bottom: 1.5rem;
+      
+      &:hover {
+        color: var(--clr-accent-blue-200);
+        cursor: pointer;
+      }
     }
   }
 
@@ -41,6 +46,11 @@ footer {
   }
 
   & .attribution a {
-    color: var(--clr-accent-cyan);
+    color: var(--clr-accent-cyan-400);
+  
+    &:hover {
+      color: var(--clr-accent-cyan-200);
+      cursor: pointer;
+    }
   }
 }

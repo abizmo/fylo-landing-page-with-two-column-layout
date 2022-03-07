@@ -77,11 +77,13 @@ select {
   }
 }
 :root {
-  --clr-primary-900: hsl(243, 87%, 12%);
-  --clr-primary-900-a: hsla(243, 87%, 12%, .32);
+  --clr-primary-900: #070439;
+  --clr-primary-900-a: rgba(7, 4, 57, 0.35);
   --clr-primary-700: hsl(238, 22%, 44%);
-  --clr-accent-400: hsl(224, 93%, 58%);
-  --clr-accent-cyan: hsl(170, 45%, 43%);
+  --clr-accent-blue-400: #3065f8;
+  --clr-accent-blue-200: #628af9;
+  --clr-accent-cyan-400: #3c9f8f;
+  --clr-accent-cyan-200: #64c4b4;
   --clr-neutral-200: hsl(240, 75%, 98%);
   --clr-neutral-gray: hsl(0, 0%, 75%);
   --ff-primary: "Open Sans";
@@ -229,12 +231,16 @@ header img {
   padding: 1rem 2rem;
 }
 #hero button {
-  background-color: var(--clr-accent-400);
+  background-color: var(--clr-accent-blue-400);
   border: none;
   border-radius: 0.25rem;
   box-shadow: 0 0.25rem 0.5rem var(--clr-primary-900-a);
   color: var(--clr-neutral-200);
   padding: 1rem;
+}
+#hero button:hover {
+  background-color: var(--clr-accent-blue-200);
+  cursor: pointer;
 }
 
 #features {
@@ -262,8 +268,8 @@ header img {
   width: 85%;
 }
 #features a {
-  border-bottom: 0.125rem solid var(--clr-accent-cyan);
-  color: var(--clr-accent-cyan);
+  border-bottom: 0.125rem solid var(--clr-accent-cyan-400);
+  color: var(--clr-accent-cyan-400);
   display: flex;
   gap: 0.5rem;
   justify-content: center;
@@ -275,6 +281,13 @@ header img {
 #features a img {
   height: 1.5rem;
   width: 1.5rem;
+}
+#features a:hover {
+  border-bottom-color: var(--clr-accent-cyan-200);
+  color: var(--clr-accent-cyan-200);
+}
+#features a:hover img {
+  filter: brightness(1.2);
 }
 #features blockquote {
   background-color: white;
@@ -329,16 +342,21 @@ header img {
   max-width: 21.75rem;
 }
 #cta form input {
+  border: none;
   border-radius: 0.25rem;
   box-shadow: 0 0 0.25rem var(--clr-primary-900-a);
   padding: 1rem 0.75rem;
 }
 #cta form button {
-  background-color: var(--clr-accent-400);
+  background-color: var(--clr-accent-blue-400);
   border: none;
   border-radius: 0.25rem;
   box-shadow: 0 0 0.25rem var(--clr-primary-900-a);
   padding: 1rem;
+}
+#cta form button:hover {
+  background-color: var(--clr-accent-blue-200);
+  cursor: pointer;
 }
 
 footer {
@@ -367,6 +385,10 @@ footer .links {
 footer .links li {
   margin-bottom: 1.5rem;
 }
+footer .links li:hover {
+  color: var(--clr-accent-blue-200);
+  cursor: pointer;
+}
 footer .attribution {
   font-size: 11px;
   position: absolute;
@@ -377,7 +399,11 @@ footer .attribution {
   width: max-content;
 }
 footer .attribution a {
-  color: var(--clr-accent-cyan);
+  color: var(--clr-accent-cyan-400);
+}
+footer .attribution a:hover {
+  color: var(--clr-accent-cyan-200);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

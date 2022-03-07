@@ -25,8 +25,8 @@
   }
 
   & a {
-    border-bottom: .125rem solid var(--clr-accent-cyan);
-    color: var(--clr-accent-cyan);
+    border-bottom: .125rem solid var(--clr-accent-cyan-400);
+    color: var(--clr-accent-cyan-400);
     display: flex;
     gap: .5rem;
     justify-content: center;
@@ -38,6 +38,15 @@
     & img {
       height: 1.5rem;
       width: 1.5rem;
+    }
+
+    &:hover {
+      border-bottom-color: var(--clr-accent-cyan-200);
+      color: var(--clr-accent-cyan-200);
+
+      & img {
+        filter: brightness(1.2);
+      }
     }
   }
 

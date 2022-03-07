@@ -1,9 +1,15 @@
+$primary-900: hsl(243, 87%, 12%);
+$accent-blue: hsl(224, 93%, 58%);
+$accent-cyan: hsl(170, 45%, 43%);
+
 :root {
-  --clr-primary-900: hsl(243, 87%, 12%);
-  --clr-primary-900-a: hsla(243, 87%, 12%, .32);
+  --clr-primary-900: #{$primary-900};
+  --clr-primary-900-a: #{transparentize($primary-900, .65)};
   --clr-primary-700: hsl(238, 22%, 44%);
-  --clr-accent-400: hsl(224, 93%, 58%);
-  --clr-accent-cyan: hsl(170, 45%, 43%);
+  --clr-accent-blue-400: #{$accent-blue};
+  --clr-accent-blue-200: #{lighten($accent-blue, 10%)};
+  --clr-accent-cyan-400: #{$accent-cyan};
+  --clr-accent-cyan-200: #{lighten($accent-cyan, 15%)};
   --clr-neutral-200: hsl(240, 75%, 98%);
   --clr-neutral-gray: hsl(0, 0%, 75%);
 

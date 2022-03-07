@@ -15,17 +15,23 @@
     max-width: 21.75rem;
 
     & input {
+      border: none;
       border-radius: .25rem;
       box-shadow: 0 0 .25rem var(--clr-primary-900-a);
       padding: 1rem .75rem;
     }
 
     & button {
-      background-color: var(--clr-accent-400);
+      background-color: var(--clr-accent-blue-400);
       border: none;
       border-radius: .25rem;
       box-shadow: 0 0 .25rem var(--clr-primary-900-a);
       padding: 1rem;
+
+      &:hover {
+        background-color: var(--clr-accent-blue-200);
+        cursor: pointer;
+      }
     }
   }
 }
