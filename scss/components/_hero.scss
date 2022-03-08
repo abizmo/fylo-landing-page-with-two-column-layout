@@ -26,7 +26,6 @@
     border: .0625rem solid var(--clr-primary-900);
     border-radius: .25rem;
     flex: 1;
-    max-width: 20rem;
     padding: 1rem 2rem;
   }
 
@@ -60,6 +59,10 @@
 
     & form {
       flex-direction: row;
+    }
+
+    & input {
+      max-width: 20rem;
     }
   }
 }
