@@ -160,6 +160,13 @@ p {
   line-height: normal;
 }
 
+.navlink {
+  font-family: var(--ff-secondary), sans-serif;
+  font-size: var(--fs-400);
+  letter-spacing: -0.01em;
+  line-height: normal;
+}
+
 .quote {
   font-family: var(--ff-primary);
   font-size: var(--fs-300);
@@ -185,35 +192,40 @@ header {
   display: flex;
   justify-content: space-between;
   height: 2.25rem;
-  margin: 2rem;
+  margin: 2rem 2rem 8.75rem;
 }
 header img {
   height: 100%;
   width: auto;
 }
+@media (min-width: 80rem) {
+  header {
+    height: 3.5rem;
+    margin: 4rem 3.75rem 6.25rem;
+  }
+}
 
 .navbar {
   display: flex;
-  font-family: var(--ff-secondary), sans-serif;
-  font-size: fs-400;
   gap: 2rem;
-  letter-spacing: -0.01em;
-  line-height: normal;
+}
+@media (min-width: 80rem) {
+  .navbar {
+    gap: 3.125rem;
+  }
 }
 
 #hero {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   padding-bottom: 7rem;
-  padding-top: 7rem;
 }
-#hero *:not(h1) {
-  margin-left: auto;
-  margin-right: auto;
-  width: 85%;
-}
-#hero img {
-  margin-bottom: 3.5rem;
+#hero div {
+  text-align: center;
 }
 #hero p {
   margin-bottom: 3rem;
@@ -223,11 +235,12 @@ header img {
   flex-direction: column;
   font-family: var(--ff-secondary), sans-serif;
   gap: 1.5rem;
-  width: 100%;
 }
 #hero input {
   border: 0.0625rem solid var(--clr-primary-900);
   border-radius: 0.25rem;
+  flex: 1;
+  max-width: 20rem;
   padding: 1rem 2rem;
 }
 #hero button {
@@ -236,11 +249,28 @@ header img {
   border-radius: 0.25rem;
   box-shadow: 0 0.25rem 0.5rem var(--clr-primary-900-a);
   color: var(--clr-neutral-200);
-  padding: 1rem;
+  padding: 1rem 3.75rem;
 }
 #hero button:hover {
   background-color: var(--clr-accent-blue-200);
   cursor: pointer;
+}
+@media (min-width: 80rem) {
+  #hero {
+    flex-direction: row-reverse;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  #hero img {
+    width: 50%;
+  }
+  #hero div {
+    text-align: left;
+    width: fit-content;
+  }
+  #hero form {
+    flex-direction: row;
+  }
 }
 
 #features {

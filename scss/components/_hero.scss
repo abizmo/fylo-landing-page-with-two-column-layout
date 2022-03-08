@@ -1,17 +1,14 @@
 #hero {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   padding-bottom: 7rem;
-  padding-top: 7rem;
 
-  & *:not(h1){
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
-  }
-
-  & img {
-    margin-bottom: 3.5rem;
+  & div {
+    text-align: center;
   }
 
   & p {
@@ -23,12 +20,13 @@
     flex-direction: column;
     font-family: var(--ff-secondary), sans-serif;
     gap: 1.5rem;
-    width: 100%;
   }
 
   & input {
     border: .0625rem solid var(--clr-primary-900);
     border-radius: .25rem;
+    flex: 1;
+    max-width: 20rem;
     padding: 1rem 2rem;
   }
 
@@ -38,11 +36,30 @@
     border-radius: .25rem;
     box-shadow: 0 .25rem .5rem var(--clr-primary-900-a);
     color: var(--clr-neutral-200);
-    padding: 1rem;
+    padding: 1rem 3.75rem;
 
     &:hover {
       background-color: var(--clr-accent-blue-200);
       cursor: pointer;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    flex-direction: row-reverse;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+
+    & img {
+      width: 50%;
+    }
+
+    & div {
+      text-align: left;
+      width: fit-content;
+    }
+
+    & form {
+      flex-direction: row;
     }
   }
 }
