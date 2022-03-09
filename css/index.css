@@ -467,12 +467,19 @@ footer img {
   filter: brightness(0) invert(1);
   margin-bottom: 3.75rem;
 }
+footer div {
+  display: flex;
+  flex-direction: column;
+}
 footer p {
   margin: 0;
 }
 footer a {
   color: inherit;
   text-decoration: none;
+}
+footer a i {
+  margin-right: 0.5rem;
 }
 footer .links {
   font-size: 1.375rem;
@@ -502,6 +509,25 @@ footer .attribution a {
 footer .attribution a:hover {
   color: var(--clr-accent-cyan-200);
   cursor: pointer;
+}
+@media (min-width: 80rem) {
+  footer {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 7rem;
+  }
+  footer div {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 12.5rem;
+    justify-content: flex-start;
+  }
+  footer div > * {
+    width: fit-content;
+  }
+  footer div .socials {
+    gap: 1rem;
+  }
 }
 
 .socials {
