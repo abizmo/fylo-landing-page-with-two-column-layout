@@ -130,6 +130,12 @@ p {
   letter-spacing: 0.005em;
   line-height: 1.875rem;
   margin-bottom: 1.5rem;
+  text-align: center;
+}
+@media (min-width: 80rem) {
+  p {
+    text-align: left;
+  }
 }
 
 .input-1, .input-2 {
@@ -287,7 +293,7 @@ header img {
   display: flex;
   flex-direction: column;
   gap: 8.125rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: 7rem;
   padding-left: 2.25rem;
   padding-right: 2.25rem;
   padding-top: 3.5rem;
@@ -304,6 +310,9 @@ header img {
   top: -53px;
   left: 0;
   right: 0;
+}
+#features p {
+  text-align: left;
 }
 #features a {
   align-items: center;
@@ -389,20 +398,23 @@ header img {
 }
 
 #cta {
+  align-items: center;
   background-color: var(--clr-primary-700);
+  display: flex;
+  flex-direction: column;
   padding-bottom: 6.25rem;
   padding-left: 3rem;
   padding-right: 3rem;
   padding-top: 5rem;
 }
+#cta div p {
+  margin-bottom: 2rem;
+}
 #cta form {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2.25rem;
-  max-width: 21.75rem;
+  width: 21rem;
 }
 #cta form input {
   border: none;
@@ -420,6 +432,27 @@ header img {
 #cta form button:hover {
   background-color: var(--clr-accent-blue-200);
   cursor: pointer;
+}
+@media (min-width: 80rem) {
+  #cta {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 7.5rem;
+    padding-top: 7rem;
+  }
+  #cta div, #cta form {
+    width: 45%;
+  }
+  #cta div p {
+    margin-bottom: 0;
+  }
+  #cta form button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: fit-content;
+  }
 }
 
 footer {
