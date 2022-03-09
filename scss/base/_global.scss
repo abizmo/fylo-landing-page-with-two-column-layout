@@ -5,6 +5,11 @@ h1 {
   letter-spacing: -0.017em;
   line-height: 3.25rem;
   margin-bottom: 2.25rem;
+
+  @media (min-width: 80rem) {
+    letter-spacing: 0;
+    line-height: 3.75rem;
+  }
 }
 
 h2 {
@@ -31,6 +36,8 @@ p {
   text-align: center;
 
   @media (min-width: 80rem) {
+    letter-spacing: 0;
+    line-height: 1.5rem;
     text-align: left;
   }
 }

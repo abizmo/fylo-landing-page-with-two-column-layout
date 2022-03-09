@@ -26,4 +26,10 @@ $accent-cyan: hsl(170, 45%, 43%);
 
   --fw-400: 400;
   --fw-700: 700;
+
+  @media (min-width: 80rem) {
+    --fs-500: 1.125rem;
+    --fs-600: 1.875rem;
+    --fs-700: 2.75rem;
+  }
 }
